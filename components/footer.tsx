@@ -27,7 +27,7 @@ const links = [
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full pt-10">
       <div className="border-t border-gray-500 h-1" />
       <div className="flex w-full items-center justify-between p-6">
         <div>
@@ -35,7 +35,7 @@ export const Footer = () => {
         </div>
         <div className="flex items-center justify-center gap-x-4 pr-2">
           {links.map((link) => (
-            <TooltipProvider key={link.href}>
+            <TooltipProvider key={link.tooltipContent}>
               <Tooltip>
                 <TooltipTrigger>
                   <Link target="_blank" href={link.href}>
