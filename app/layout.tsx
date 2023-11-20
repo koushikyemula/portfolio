@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={cn("flex flex-col justify-center items-center px-96", inter.className)}>
+      <body className={cn("flex flex-col justify-center items-start px-[calc(27rem+5px)]", inter.className)}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
           <Footer />

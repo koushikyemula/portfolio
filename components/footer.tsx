@@ -27,9 +27,9 @@ const links = [
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col w-full pt-10">
+    <div className="flex flex-col w-full mt-10">
       <div className="border-t border-gray-500 h-1" />
-      <div className="flex w-full items-center justify-between p-6">
+      <div className="flex w-full items-center justify-between py-5">
         <div>
           <h2>Koushik Yemula</h2>
         </div>
@@ -37,7 +37,7 @@ export const Footer = () => {
           {links.map((link) => (
             <TooltipProvider key={link.tooltipContent}>
               <Tooltip>
-                <TooltipTrigger>
+                <TooltipTrigger asChild>
                   <Link target="_blank" href={link.href}>
                     <link.icon className="h-4 w-4" />
                   </Link>
