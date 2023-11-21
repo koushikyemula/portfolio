@@ -13,7 +13,7 @@ export const Footer = () => {
         <div className="flex items-center justify-center gap-x-4 pr-2">
           {socials.map((social) => (
             <TooltipProvider key={social.tooltipContent}>
-              <Tooltip>
+              <Tooltip delayDuration={1}>
                 <TooltipTrigger asChild>
                   <Link target="_blank" href={social.href}>
                     <social.icon className="h-4 w-4" />
