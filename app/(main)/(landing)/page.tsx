@@ -1,3 +1,4 @@
+import { Projects } from "@/components/projects";
 import Link from "next/link";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
         <span className="text-muted-foreground text-xs">IPA /blɪts/ - idk, it sounds cool</span>
         <p className="text-zinc-100 pb-7 gap-2">
           Hi there, I&apos;m <span className="text-bold">Koushik</span>. I&apos;m a 19y/o CS undergrad student
-          who loves to code. I love dark mode, open source and simple web design. When i&apos;m not coding, i
+          who loves to code. I love dark stuff, open source and simple web design. When i&apos;m not coding, i
           like playing games and watching anime.
         </p>
         <p>
@@ -18,15 +19,7 @@ export default function Home() {
           my skills and knowledge.
         </p>
       </div>
-      <div>
-        {/*turn this into a new projects component */}
-        <h2 className="text-xl font-bold">Projects</h2>
-        <div>
-          <Link href="https://github.com/BlitZSenpai/Otto">
-            <span className="underline">Crux</span>
-          </Link>
-        </div>
-      </div>
+      <Projects />
     </main>
   );
 }
