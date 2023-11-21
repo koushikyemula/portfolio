@@ -2,8 +2,8 @@ import { Projects } from "@/components/projects";
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-screen py-12 gap-y-12">
-      <div className="pb-">
+    <main className="flex flex-col h-screen py-9 gap-y-12">
+      <div className="mt-7">
         <h1 className="font-medium text-md">Koushik Yemula</h1>
       </div>
       <div>
