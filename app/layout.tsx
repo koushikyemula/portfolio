@@ -15,12 +15,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={cn("flex flex-col justify-center items-start px-[calc(27rem+5px)]", inter.className)}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          {children}
+      <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
+        <body className={cn("flex flex-col justify-center items-center px-6", inter.className)}>
+          <main className="flex flex-col h-screen py-9 gap-y-12 max-w-xl">{children}</main>
           <Footer />
-        </ThemeProvider>
-      </body>
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

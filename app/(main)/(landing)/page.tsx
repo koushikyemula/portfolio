@@ -2,9 +2,9 @@ import { Projects } from "@/components/projects";
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-screen py-9 gap-y-12">
+    <>
       <div className="mt-7">
-        <h1 className="font-medium text-md">Koushik Yemula</h1>
+        <h1 className="font-medium text-2xl">Koushik Yemula</h1>
       </div>
       <div>
         <span className="text-muted-foreground text-xs">IPA /blɪts/ - idk, it sounds cool</span>
@@ -19,6 +19,6 @@ export default function Home() {
         </p>
       </div>
       <Projects />
-    </main>
+    </>
   );
 }
