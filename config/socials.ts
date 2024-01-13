@@ -13,7 +13,7 @@ export const socials = [
   },
   {
     icon: Mail,
-    href: "https://github.com/BlitZSenpai",
+    href: "mailto:koushikyemula@gmail.com",
     tooltipContent: "Mail",
   },
   {
