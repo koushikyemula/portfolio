@@ -15,13 +15,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
-        <body
-          className={cn("flex flex-col justify-center items-center px-6 bg-neutral-900", inter.className)}>
+      <body className={cn("flex flex-col justify-center items-center px-6 bg-neutral-900", inter.className)}>
+        <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
           <main className="flex flex-col h-screen py-9 gap-y-12 max-w-xl">{children}</main>
           <Footer />
-        </body>
-      </ThemeProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

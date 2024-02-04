@@ -10,8 +10,8 @@ export const Projects = () => {
         <ul className="flex flex-col gap-y-4 mt-5">
           {projects.map((project) => (
             <li key={project.name} className="w-full">
-              <Link target="_blank" href={project.url.github} className="hover:underline no-underline !w-fit">
-                <p className="text-lg font-semibold">{project.name}</p>
+              <Link target="_blank" href={project.url.github} className="hover:underline no-underline">
+                <span className="text-lg font-semibold">{project.name}</span>
               </Link>
               <p className="text-zinc-270 font-normal">{project.description}</p>
             </li>
