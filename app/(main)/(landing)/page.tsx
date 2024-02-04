@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div className="mt-7">
-        <h1 className="font-medium text-2xl">Koushik Yemula</h1>
+        <h1 className="font-medium text-3xl">Koushik Yemula</h1>
       </div>
       <div>
         <span className="text-muted-foreground text-xs">IPA /blɪts/ - idk, it sounds cool</span>

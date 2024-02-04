@@ -8,15 +8,16 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BlitZ",
+  title: "Koushik Yemula",
   description: "My Portfolio",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
-        <body className={cn("flex flex-col justify-center items-center px-6", inter.className)}>
+        <body
+          className={cn("flex flex-col justify-center items-center px-6 bg-neutral-900", inter.className)}>
           <main className="flex flex-col h-screen py-9 gap-y-12 max-w-xl">{children}</main>
           <Footer />
         </body>
