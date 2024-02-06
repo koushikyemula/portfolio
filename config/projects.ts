@@ -4,7 +4,7 @@ export const projects = [
     description: "A simple Note-taking web application",
     url: {
       github: "https://github.com/BlitZSenpai/Crux",
-      website: "crux-nine.vercel.app",
+      website: "crux-note.vercel.app",
     },
   },
   {
@@ -20,15 +20,15 @@ export const projects = [
     description: "An all-in-one AI tool for code generation, image generation and more..",
     url: {
       github: "https://github.com/BlitZSenpai/Stellar",
-      website: "stellar-blitzsenpai.vercel.app",
+      website: "stellar-saas.vercel.app",
     },
   },
   {
-    name: "Trinity",
+    name: "Quill",
     description: "Just another live-streaming platform like Twitch",
     url: {
-      github: "https://github.com/BlitZSenpai/Trinity",
-      website: "trinity-olive.vercel.app",
+      github: "https://github.com/BlitZSenpai/Quill",
+      website: "quill-stream.vercel.app",
     },
   },
 ];
