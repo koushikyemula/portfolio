@@ -7,7 +7,11 @@ export const Footer = () => {
     <div className="flex flex-col w-full max-w-xl mt-20">
       <div className="border-t border-gray-500 h-1" />
       <div className="flex w-full items-center justify-between py-5">
-        <h2>Koushik Yemula</h2>
+        <Link
+          href={"https://drive.google.com/file/d/1bY7D5vNTziS1ULrs33qPpwqP7z9hDcT2/view?usp=sharing"}
+          target="_blank">
+          Koushik Yemula
+        </Link>
         <div className="flex items-center justify-center gap-x-4 pr-2">
           {socials.map((social) => (
             <TooltipProvider key={social.tooltipContent}>
