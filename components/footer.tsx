@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="border-t border-gray-500 h-1" />
       <div className="flex w-full items-center justify-between py-5">
         <Link
-          href={"https://drive.google.com/file/d/1bY7D5vNTziS1ULrs33qPpwqP7z9hDcT2/view?usp=sharing"}
+          href={"https://drive.google.com/file/d/1Tz1X-nvbLk2XIGlROaaHi20dRxbJG15f/view?usp=sharing"}
           target="_blank">
           Koushik Yemula
         </Link>

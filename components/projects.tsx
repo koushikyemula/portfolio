@@ -19,7 +19,7 @@ export const Projects = () => {
         </ul>
         <Link
           target="_blank"
-          className="flex flex-row items-center pt-3 underline w-fit"
+          className="flex flex-row items-center pt-3 underline w-fit hover:opacity-85"
           href="https://github.com/BlitZSenpai?tab=repositories">
           <p>All projects</p> <ArrowRight className="w-4 h-4 ml-0.5" />
         </Link>
