@@ -1,11 +1,16 @@
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 
-const NotFoundPagw = () => {
+const NotFoundPage = () => {
   return (
     <div className="h-full flex flex-col w-full items-center justify-center gap-10">
-      <h1 className="font-bold text-6xl">Not Found!!</h1>
+      <h1 className="font-bold text-4xl">What are you doing here?!</h1>
       <Link
-        className="p-4 w-auto h-auto hover:opacity-70 border-2 border-neutral-100 rounded-md"
+        className={buttonVariants({
+          variant: "outline",
+          size: "lg",
+          className: "text-lg h-12 font-bold",
+        })}
         href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
         Return Home
       </Link>
@@ -13,4 +18,4 @@ const NotFoundPagw = () => {
   );
 };
 
-export default NotFoundPagw;
+export default NotFoundPage;
