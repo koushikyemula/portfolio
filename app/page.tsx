@@ -2,7 +2,7 @@ import { Projects } from "@/components/projects";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col gap-10">
       <div className="mt-7">
         <h1 className="font-medium text-3xl">Koushik Yemula</h1>
       </div>
@@ -19,6 +19,6 @@ export default function Home() {
         </p>
       </div>
       <Projects />
-    </>
+    </div>
   );
 }
