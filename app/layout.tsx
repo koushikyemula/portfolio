@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <body className={cn("flex flex-col justify-center items-center px-6 bg-neutral-900", inter.className)}>
         <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
-          <main className="flex flex-col h-dvh py-9 gap-y-12 max-w-xl">{children}</main>
+          <main className="flex flex-col max-h-dvh py-9 gap-y-12 max-w-xl">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
