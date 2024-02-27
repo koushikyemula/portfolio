@@ -9,9 +9,9 @@ export default function Home() {
       <div>
         <span className="text-muted-foreground text-xs">IPA /blɪts/ - idk, it sounds cool</span>
         <p className="pb-6 gap-2 leading-7 text-zinc-270 font-normal">
-          Hi there, I&apos;m <span className="text-bold">Koushik</span>. I&apos;m a 20y/o CS undergrad student
-          who loves to code. <br />I love dark stuff, open source and simple web design. When i&apos;m not
-          coding, I like to play games and watch anime.
+          Hey! I&apos;m <span className="text-bold">Koushik</span>, a 20y/o CS undergrad student who loves to
+          code. <br />I love dark mode with simple and minimalistic web design. When i&apos;m not coding, I
+          like to play games and watch anime.
           <br />
           <br />
           Right now i&apos;m looking for new opportunities and exploring the world of coding to futher improve
