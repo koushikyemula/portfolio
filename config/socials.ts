@@ -8,7 +8,7 @@ export const socials = [
   },
   {
     icon: FileText,
-    href: "https://drive.google.com/file/d/1Tz1X-nvbLk2XIGlROaaHi20dRxbJG15f/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1QfYhuKGX1OLVFv6URueed2eBV3slRful/view?usp=sharing",
     tooltipContent: "Resume",
   },
   {
