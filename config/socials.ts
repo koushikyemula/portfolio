@@ -3,7 +3,7 @@ import { FileText, Github, Linkedin, Mail, Twitter } from "lucide-react";
 export const socials = [
   {
     icon: Github,
-    href: "https://github.com/BlitZSenpai",
+    href: "https://github.com/koushikyemula",
     tooltipContent: "Github",
   },
   {
