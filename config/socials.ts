@@ -1,4 +1,5 @@
-import { FileText, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { FileText, Github, Linkedin, Mail } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 export const socials = [
   {
@@ -22,7 +23,7 @@ export const socials = [
     tooltipContent: "Mail",
   },
   {
-    icon: Twitter,
+    icon: FaXTwitter,
     href: "https://twitter.com/koushikyemula",
     tooltipContent: "X (formarly known as twitter)",
   },
