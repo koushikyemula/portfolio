@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     name: "Wrapped",
-    description: "Minimalistic blog website where stories are wrapped into blogs",
+    description: "Minimalistic blog website where stories are wrapped",
     url: {
       github: "https://github.com/BlitZSenpai/Blog-Wrapped",
       website: "blog-wrapped.vercel.app",
