@@ -14,8 +14,8 @@ export default function Home() {
           like to play games and watch anime.
           <br />
           <br />
-          Right now i&apos;m looking for new opportunities and exploring the world of coding to futher improve
-          my skills and knowledge.
+          Right now i&apos;m working @ Vertocity as a SDE intern and exploring the world of coding to futher
+          improve my skills and knowledge.
         </p>
       </div>
       <Projects />
