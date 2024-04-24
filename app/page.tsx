@@ -9,13 +9,13 @@ export default function Home() {
       <div>
         <span className="text-muted-foreground text-xs">IPA /blɪts/ - idk, it sounds cool</span>
         <p className="pb-6 gap-2 leading-7 text-zinc-270 font-normal">
-          Hey! I&apos;m <span className="text-bold">Koushik</span>, a 20y/o CS undergrad student who loves to
-          code. <br />I love dark mode with simple and minimalistic web design. When i&apos;m not coding, I
-          like to play games and watch anime.
+          Hello! I'm <span className="text-bold">Koushik</span>, a 20-year-old computer science undergrad
+          student. I love coding and have a passion for simple and clean web designs, especially those with a
+          dark mode.
           <br />
           <br />
-          Right now i&apos;m working @ Vertocity as a SDE intern and exploring the world of coding to futher
-          improve my skills and knowledge.
+          When I'm not coding, I enjoy playing video games and watching anime. Right now, I'm working as an
+          intern @ Vertocity, where I'm learning and improving my coding abilities.
         </p>
       </div>
       <Projects />
