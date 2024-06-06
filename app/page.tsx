@@ -1,3 +1,4 @@
+import EmojiConfettiWrapper from "@/components/emoji-wrapper";
 import { Projects } from "@/components/projects";
 
 export default function Home() {
@@ -7,7 +8,9 @@ export default function Home() {
         <h1 className="font-medium text-3xl">Koushik Yemula</h1>
       </div>
       <div>
-        <span className="text-muted-foreground text-xs">IPA /blɪts/ - idk, it sounds cool</span>
+        <EmojiConfettiWrapper>
+          <span className="text-muted-foreground text-xs">IPA /blɪts/ - idk, it sounds cool</span>
+        </EmojiConfettiWrapper>
         <p className="pb-6 gap-2 leading-7 text-zinc-270 font-normal">
           Hello! I'm <span className="text-bold">Koushik</span>, a 20-year-old computer science undergrad
           student. I love coding and have a passion for simple and clean web designs, especially those with a
