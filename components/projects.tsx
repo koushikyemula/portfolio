@@ -1,29 +1,48 @@
 import { projects } from "@/config/projects";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 export const Projects = () => {
   return (
-    <div>
-      <h2 className="text-2xl font-bold">Projects</h2>
-      <div>
-        <ul className="flex flex-col gap-y-4 mt-5">
-          {projects.map((project) => (
-            <li key={project.name} className="w-full">
-              <Link target="_blank" href={project.url.github} className="hover:underline no-underline">
-                <span className="text-lg font-semibold">{project.name}</span>
+    <section>
+      <div className="mb-12">
+        <h2 className="text-xl font-medium text-white mb-3">Projects</h2>
+        <p className="text-zinc-500 text-sm">A few things I've been working on.</p>
+      </div>
+
+      <div className="space-y-8">
+        {projects.map((project) => (
+          <div key={project.name} className="group">
+            <div className="flex items-start justify-between mb-2">
+              <Link
+                target="_blank"
+                href={project.url.github}
+                className="flex items-center gap-2 text-white hover:text-zinc-300 transition-colors">
+                <span className="font-medium">{project.name}</span>
+                <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
               </Link>
-              <p className="text-zinc-270 font-normal">{project.description}</p>
-            </li>
-          ))}
-        </ul>
+              {project.url.website && (
+                <Link
+                  target="_blank"
+                  href={`https://${project.url.website}`}
+                  className="text-xs text-zinc-500 hover:text-zinc-400 transition-colors font-mono">
+                  {project.url.website}
+                </Link>
+              )}
+            </div>
+            <p className="text-zinc-400 text-sm leading-relaxed max-w-lg">{project.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-12">
         <Link
           target="_blank"
-          className="flex flex-row items-center pt-3 underline w-fit hover:opacity-85"
-          href="https://github.com/BlitZSenpai?tab=repositories">
-          <p>All projects</p> <ArrowRight className="w-4 h-4 ml-0.5" />
+          href="https://github.com/BlitZSenpai?tab=repositories"
+          className="text-sm text-zinc-500 hover:text-zinc-400 transition-colors">
+          More on GitHub →
         </Link>
       </div>
-    </div>
+    </section>
   );
 };

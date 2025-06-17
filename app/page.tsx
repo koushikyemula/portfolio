@@ -3,24 +3,31 @@ import { Projects } from "@/components/projects";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8">
-      <div className="mt-7">
-        <h1 className="font-medium text-3xl">Koushik Yemula</h1>
-      </div>
-      <div>
-        <EmojiConfettiWrapper>
-          <span className="text-muted-foreground text-xs">IPA /blɪts/ - idk, it sounds cool</span>
-        </EmojiConfettiWrapper>
-        <p className="pb-6 gap-2 leading-7 text-zinc-270 font-normal">
-          Hello! I'm <span className="text-bold">Koushik</span>, a 20-year-old computer science undergrad
-          student. I love coding and have a passion for simple and clean web designs, especially those with a
-          dark mode.
-          <br />
-          <br />
-          When I'm not coding, I enjoy playing video games and watching anime. Right now, I'm working as an
-          intern @ Vertocity, where I'm learning and improving my coding abilities.
-        </p>
-      </div>
+    <div className="flex flex-col">
+      <section className="mb-16">
+        <div className="mb-6">
+          <h1 className="text-4xl font-semibold tracking-tight text-white mb-2">Koushik Yemula</h1>
+          <div className="flex items-center gap-2 mb-4">
+            <EmojiConfettiWrapper>
+              <span className="text-zinc-400 text-sm font-mono tracking-wide">/koʊˈʃɪk/ — CS undergrad</span>
+            </EmojiConfettiWrapper>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <p className="text-zinc-300 text-base leading-relaxed">
+            Hey there! I'm a 21-year-old computer science student with a passion for building clean, minimal
+            web experiences. I love crafting interfaces that feel effortless and purposeful.
+          </p>
+
+          <p className="text-zinc-400 text-sm leading-relaxed">
+            Currently interning at <span className="text-zinc-300 font-medium">Vertocity</span>, where I'm
+            sharpening my skills and learning from amazing people. When I'm not coding, you'll find me gaming
+            or watching anime.
+          </p>
+        </div>
+      </section>
+
       <Projects />
     </div>
   );

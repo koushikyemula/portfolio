@@ -42,8 +42,13 @@ const EmojiConfettiWrapper = ({ children }: { children: React.ReactNode }) => {
     setTimeout(shoot, 100);
     setTimeout(shoot, 200);
   };
+
   return (
-    <Button variant="link" className="p-0 hover:no-underline" onClick={handleClick}>
+    <Button
+      variant="ghost"
+      size="sm"
+      className="h-auto p-0 text-zinc-400 hover:text-zinc-300 hover:bg-transparent transition-colors"
+      onClick={handleClick}>
       {children}
     </Button>
   );

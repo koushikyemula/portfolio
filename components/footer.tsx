@@ -4,31 +4,40 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col w-full max-w-xl mt-20">
-      <div className="border-t border-gray-500 h-1" />
-      <div className="flex w-full items-center justify-between py-5">
-        <Link
-          href={"https://drive.google.com/file/d/1QfYhuKGX1OLVFv6URueed2eBV3slRful/view?usp=sharing"}
-          target="_blank">
-          Koushik Yemula
-        </Link>
-        <div className="flex items-center justify-center gap-x-4 pr-2">
-          {socials.map((social) => (
-            <TooltipProvider key={social.tooltipContent}>
-              <Tooltip delayDuration={1}>
+    <footer className="border-t border-zinc-800 py-8 mt-16">
+      <div className="flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between">
+        <div>
+          <Link
+            href="https://drive.google.com/file/d/1QfYhuKGX1OLVFv6URueed2eBV3slRful/view?usp=sharing"
+            target="_blank"
+            className="text-sm text-zinc-400 hover:text-zinc-300 transition-colors">
+            © 2025 Koushik Yemula
+          </Link>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <TooltipProvider>
+            {socials.map((social) => (
+              <Tooltip key={social.tooltipContent} delayDuration={300}>
                 <TooltipTrigger asChild>
-                  <Link target="_blank" href={social.href}>
+                  <Link
+                    target="_blank"
+                    href={social.href}
+                    className="text-zinc-500 hover:text-zinc-300 transition-colors p-1 rounded-md hover:bg-zinc-800/50">
                     <social.icon className="h-4 w-4" />
+                    <span className="sr-only">{social.tooltipContent}</span>
                   </Link>
                 </TooltipTrigger>
-                <TooltipContent className="bg-background">
-                  <p className="text-zinc-400 text-sm">{social.tooltipContent}</p>
+                <TooltipContent
+                  side="top"
+                  className="bg-zinc-900 border-zinc-700 text-zinc-300 text-xs px-2 py-1">
+                  {social.tooltipContent}
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider>
-          ))}
+            ))}
+          </TooltipProvider>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
