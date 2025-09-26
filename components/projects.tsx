@@ -7,7 +7,7 @@ export const Projects = () => {
     <section>
       <div className="mb-12">
         <h2 className="text-xl font-medium text-white mb-3">Projects</h2>
-        <p className="text-zinc-500 text-sm">A few things I've been working on.</p>
+        <p className="text-zinc-500 text-sm">A few things I&apos;ve been working on.</p>
       </div>
 
       <div className="space-y-8">

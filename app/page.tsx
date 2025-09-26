@@ -16,14 +16,14 @@ export default function Home() {
 
         <div className="space-y-4">
           <p className="text-zinc-300 text-base leading-relaxed">
-            Hey there! I'm a 21-year-old computer science student with a passion for building clean, minimal
-            web experiences. I love crafting interfaces that feel effortless and purposeful.
+            Hey there! I&apos;m a 21-year-old computer science student with a passion for building clean,
+            minimal web experiences. I love crafting interfaces that feel effortless and purposeful.
           </p>
 
           <p className="text-zinc-400 text-sm leading-relaxed">
-            Currently interning at <span className="text-zinc-300 font-medium">Vertocity</span>, where I'm
-            sharpening my skills and learning from amazing people. When I'm not coding, you'll find me gaming
-            or watching anime.
+            Currently interning at <span className="text-zinc-300 font-medium">Vertocity</span>, where
+            I&apos;m sharpening my skills and learning from amazing people. When I&apos;m not coding,
+            you&apos;ll find me gaming or watching anime.
           </p>
         </div>
       </section>
