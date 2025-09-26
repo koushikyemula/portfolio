@@ -21,14 +21,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning className={inter.variable}>
       <body
         className={cn(
-          "min-h-screen bg-black text-white antialiased",
+          "h-screen bg-black text-white antialiased",
           "flex flex-col items-center",
           "font-inter selection:bg-zinc-600 selection:text-white",
           inter.className
         )}>
         <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
-          <div className="flex flex-col min-h-screen w-full max-w-2xl px-6">
-            <main className="flex-1 py-16 md:py-24">{children}</main>
+          <div className="flex flex-col w-full max-w-2xl h-full px-6">
+            <main className="flex-1 overflow-y-auto">{children}</main>
             <Footer />
           </div>
         </ThemeProvider>
